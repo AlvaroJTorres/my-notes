@@ -1,0 +1,7 @@
+.note-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 343px;
+  padding: 16px;
+  gap: 16px;
+}

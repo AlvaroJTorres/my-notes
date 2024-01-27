@@ -1,0 +1,35 @@
+.note {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px;
+  border-style: solid;
+  gap: 16px;
+  background-color: #fff;
+  border-color: #4F4F4F;
+}
+
+.note-description {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 400;
+  max-width: 310px;
+  word-wrap: break-word;
+}
+
+.note-button {
+  padding: 4px 16px;
+  border-radius: 16px;
+  border: none;
+  gap: 8px;
+  align-self: flex-end;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.note-button:active { 
+  transform: scale(0.9); 
+}

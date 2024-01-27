@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-input {
+  height: 120px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px;
+  border-style: solid;
+  background-color: #fff;
+  border-color: #4F4F4F;
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 400;
+  resize: none;
+}
+
+.form-submit {
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: #4F4F4F;
+  color: #fff;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.form-submit:active { 
+  transform: scale(0.9); 
+} 
