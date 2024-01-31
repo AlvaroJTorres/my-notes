@@ -15,10 +15,16 @@ export default function NoteContainer(){
   }
 
   const saveNote = () => {
-    if(text) {
+    if(text.trim()) {
       setNotes([...notes, {id: uuid(), description: text}])
       setText('')
     }
+  }
+
+  const editNote = (id, text) => {
+    const currentNote = notes.find((note) => note.id == id)
+    currentNote.description = text.trim()
+    setNotes([...notes])
   }
 
   const deleteNote = (id) => {
@@ -41,7 +47,7 @@ export default function NoteContainer(){
     <div className="note-container">
       <Form text={text} setText={textHandler} saveNote={saveNote}/>
       {notes.map((note) => (
-        <Note key={note.id} id={note.id} description={note.description} deleteNote={deleteNote}/>
+        <Note key={note.id} id={note.id} description={note.description} deleteNote={deleteNote} editNote={editNote} text={note.description} setText={textHandler}/>
       ))} 
     </div>
   )
